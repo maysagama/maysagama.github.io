@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'nanum';
+    src: url('nanum.eot');
+    src: url('nanum.eot?#iefix') format('embedded-opentype'),
+         url('nanum.woff2') format('woff2'),
+         url('nanum.woff') format('woff'),
+         url('nanum.ttf')  format('truetype'), 
+         url('nanum.svg#CustomFont') format('svg');
+  }
+  
+  h1, h2, h3 {
+    font-family: 'nanum', serif;
+  }
+
+  html, body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+  body {
+    color: rgb(89, 78, 60);
+    background-color: rgb(240, 235, 215);
+    font-family: 'Calibri', sans-serif;
+}
+
+  .column {
+    display: flex;
+    padding: 10px;
+  }
+  
+  .left{
+    float: left;
+    width: 100px;
+    margin-right: 40px;
+}
+
+.right {
+    float: right;
+    font-size:18px;
+}
+
+.menu{
+    font-family: 'nanum', serif;
+}
+
+.menu .active:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu a:hover {
+    text-decoration: none;
+    color: rgb(191, 61, 61);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.profile {
+    text-align: left;
+    width: 70%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contact {
+  display: flex;
+  vertical-align: baseline;
+}
