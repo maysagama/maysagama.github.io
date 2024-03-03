@@ -8,9 +8,36 @@
          url('nanum.svg#CustomFont') format('svg');
   }
   
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
   h1, h2, h3 {
     font-family: 'nanum', serif;
   }
+
+p, li{
+  font-size: 16px;
+}
+
+li{
+  padding: 8px
+}
+
+p{
+  margin:0;
+  padding:0;
+}
 
   html, body {
     display: flex;
@@ -23,7 +50,7 @@
   body {
     color: rgb(89, 78, 60);
     background-color: rgb(240, 235, 215);
-    font-family: 'Calibri', sans-serif;
+    font-family: 'Open Sans';
 }
 
   .column {
@@ -32,14 +59,29 @@
   }
   
   .left{
+    order: 1;
     float: left;
     width: 100px;
     margin-right: 40px;
 }
 
 .right {
+    order: 2;
     float: right;
     font-size:18px;
+}
+
+@media (max-width: 768px) {
+  .column {
+      flex-direction: column;
+      align-items: flex-start;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+.menu {
+      margin-top: 10px;
+  }
 }
 
 .menu{
@@ -76,4 +118,39 @@ a {
 .contact {
   display: flex;
   vertical-align: baseline;
+}
+
+.work{
+  display: flex;
+  align-content: baseline;
+  margin-bottom: 60px;
+}
+
+.work-text {
+  margin-left: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .work {
+    flex-direction: column;
+  }
+
+  .work-text {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+.background{
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+.methods{
+  text-align: left;
+}
+
+.impact{
+  text-align: left;
 }
