@@ -147,10 +147,10 @@ a {
   column-gap: 30px;
 }
 
-.methods{
+.textleft{
   text-align: left;
 }
 
-.impact{
-  text-align: left;
+.details a {
+  color: rgb(171, 56, 56);
 }
