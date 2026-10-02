@@ -197,5 +197,9 @@ a {
       order: 1;
       margin-top: 0px;
     }
-
+    
+div:last-child {
+  margin-bottom: 80px;
+}
+    
   }
